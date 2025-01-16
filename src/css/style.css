@@ -5,7 +5,7 @@
 
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: url('/paper2.png') center/cover no-repeat;
+  background: url("../img/paper2.png") center/cover no-repeat;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
