@@ -11,9 +11,6 @@ Ein interaktives Projekt, um Panini Karten zu erstellen. BenutzerInnen können e
 
 - **Charakterkarten erstellen**: Fülle ein Formular aus, um Charakterkarten zu erstellen.
 - **Dynamische Anzeige**: Alle Karten werden automatisch im Kartencontainer dargestellt.
-- **Karten speichern und laden**:
-  - Speichere alle Karten lokal im Browser (LocalStorage).
-  - Lade gespeicherte Karten jederzeit wieder.
 
 ---
 
