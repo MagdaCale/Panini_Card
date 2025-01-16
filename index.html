@@ -1,13 +1,70 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panini Game</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script defer src="./src/ts/script.ts"></script>
+</head>
+
+<body>
+
+  <div class="buttons">
+    <button id="load-button">Load all Cards</button>
+    <button id="save-button">Save all Cards</button>
+  </div>
+
+  <div class="rotated-list__container">
+    <ul class="rotated-list">
+      <li>Thrax</li>
+      <li>Hades</li>
+      <li>Lucky Luke</li>
+      <li>Garfield</li>
+    </ul>
+  </div>
+
+  <main>
+    <div class=" container">
+      <h1>Let's create a random Panini Card</h1>
+
+      <!-- Form Section -->
+      <form id="send-form">
+        <input type="text" id="characterName" placeholder="Character Name">
+        <input type="text" id="characterLastName" placeholder="Character Last Name">
+        <input type="text" id="alias" placeholder="Alias or Nickname">
+        <input type="number" id="strength" placeholder="Strength Level (1–10)">
+        <input type="number" id="speed" placeholder="Speed (1–10)">
+        <input type="number" id="intelligence" placeholder="Intelligence (1–10)" min="1" max="10">
+        <input type="text" id="universe" placeholder="Universe (e.g., Marvel, Anime)">
+        <textarea id="quote" placeholder="A famous quote by this Character" rows="3"></textarea>
+        <input id="image" type="url" placeholder="Image URL">
+        <button type="submit" id="addBtn">Add New Character</button>
+      </form>
+
+
+      <!--  die karten werden dynamisch erstellt -->
+      <div class="cards-container">
+        <!--
+          <div class="card">
+            <h2>Sample Name (Stage Name)</h2>
+            <p><strong>Albums:</strong> 0</p>
+            <p><strong>Top 10 Singles:</strong> 0</p>
+            <p><strong>Age:</strong> 0</p>
+            <p><strong>Net Worth:</strong> 0 €</p>
+            <p class="quote">"lalaaalla "</p>
+          </div> -->
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+</body>
+
+
 </html>
