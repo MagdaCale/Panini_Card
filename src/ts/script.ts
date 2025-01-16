@@ -34,9 +34,9 @@ form.addEventListener('submit', (event) => {
     name: characterName.value,
     lastName: characterLastName.value,
     alias: alias.value,
-    strength: Number(strength.value),
-    speed: Number(speed.value),
-    intelligence: Number(intelligence.value),
+    strength: Number(strength.value) || 0, // falls eingabe leer ist
+    speed: Number(speed.value) || 0,
+    intelligence: Number(intelligence.value) || 0,
     universe: universe.value,
     quote: quote.value,
     imgUrl: image.value,

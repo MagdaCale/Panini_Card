@@ -52,6 +52,8 @@ Fülle die folgenden Felder aus, um eine Karte zu erstellen:
 
 Drücke auf den Button **"Add New Character"**, um die Karte zu erstellen.
 
+![screenshot](/public/flowchart.jpg)
+
 ## 💡 Technologien
 
 - **HTML5**: Für die Struktur des Projekts.
