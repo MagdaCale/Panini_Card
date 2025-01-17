@@ -45,11 +45,15 @@ form.addEventListener('submit', (event) => {
   // eine neue Karte wird erstellt
   createCharacterCard(newCharacter, cardContainer);
 
-  // Formular wird zurücksetzt
+  // Formular wird zurücksetzt nachdem die Karte erstellt wurde
   form.reset();
 });
 
+
+
 // * Funktion für einen neuen  Charakter
+
+// HTMLDivElement wird als Parameter erwartet, in dem die neue Charakterkarte (newCard) angezeigt wird
 function createCharacterCard(character: Character, container: HTMLDivElement) {
   const newCard = document.createElement('div');
   newCard.classList.add('card');
@@ -88,11 +92,13 @@ function createCharacterCard(character: Character, container: HTMLDivElement) {
   newCard.innerHTML = `
     <h2>${character.name} ${character.lastName}</h2>
     <h3>${character.alias}</h3>
+    <hr>
+    <br>
     <p><strong>Strength:</strong> ${character.strength}</p>
     <p><strong>Speed:</strong> ${character.speed}</p>
     <p><strong>Intelligence:</strong> ${character.intelligence}</p>
     <p><strong>Universe:</strong> ${character.universe}</p>
-    <p class="quote">"${character.quote}"</p>
+    <p class="quote">   <strong>Quote:</strong> <br>"${character.quote}"</p>
   `;
   newCard.appendChild(deleteButton);
   // newCard.appendChild(editButton);
